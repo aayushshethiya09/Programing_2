@@ -1,20 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
-    
-    
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    int i;
 
-    if (a > b) {
-        printf("Largest = %d\n", a);
-        printf("Smallest = %d\n", b);
-    } else if (b > a) {
-        printf("Largest = %d\n", b);
-        printf("Smallest = %d\n", a);
-    } else {
-        printf("Both numbers are equal: %d\n", a);
+    printf("First 10 Natural Numbers:\n");
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", i);
     }
 
     return 0;

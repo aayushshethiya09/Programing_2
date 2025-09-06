@@ -1,32 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, c;
-    
-    
-    printf("Enter three numbers: ");
-    scanf("%d %d %d", &a, &b, &c);
+    int i, num = 1;
 
-    int largest, smallest;
-
-    
-    if (a >= b && a >= c)
-        largest = a;
-    else if (b >= a && b >= c)
-        largest = b;
-    else
-        largest = c;
-
-    
-    if (a <= b && a <= c)
-        smallest = a;
-    else if (b <= a && b <= c)
-        smallest = b;
-    else
-        smallest = c;
-
-    printf("Largest = %d\n", largest);
-    printf("Smallest = %d\n", smallest);
+    printf("First 10 Odd Numbers:\n");
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", num);
+        num += 2; 
+    }
 
     return 0;
 }

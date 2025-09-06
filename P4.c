@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int i, n;
 
     
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-    
-    if (num % 7 == 0) {
-        printf("%d is divisible by 7.\n", num);
-    } else {
-        printf("%d is not divisible by 7.\n", num);
+    printf("First %d Natural Numbers:\n", n);
+
+    for (i = 1; i <= n; i++) {
+        printf("%d\n", i);
     }
 
     return 0;
