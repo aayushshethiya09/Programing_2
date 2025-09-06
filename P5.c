@@ -1,28 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    float gross, discount, net;
+    int i, n, num = 1;
 
-   
-    printf("Enter Gross Sales: ");
-    scanf("%f", &gross);
+    
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-   
-    if (gross > 20000) {
-        discount = 0.15 * gross;  
-    } 
-    else if (gross > 10000) {
-        discount = 0.10 * gross;   
+    printf("First %d Odd Numbers:\n", n);
+
+    for (i = 1; i <= n; i++) {
+        printf("%d\n", num);
+        num += 2; 
     }
-    else {
-        discount = 0.05 * gross;   
-    }
-
-    net = gross - discount;
-
-    printf("Gross Sales  = %.2f\n", gross);
-    printf("Discount     = %.2f\n", discount);
-    printf("Net Sales    = %.2f\n", net);
 
     return 0;
 }

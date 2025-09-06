@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int i, n, num = 2;
+    int n, sum = 0, i;
 
-  
+    
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    printf("First %d Even Numbers:\n", n);
-
+   
     for (i = 1; i <= n; i++) {
-        printf("%d\n", num);
-        num += 2; 
+        sum += i;
     }
+
+    printf("Sum of first %d natural numbers = %d\n", n, sum);
 
     return 0;
 }
